@@ -5,9 +5,13 @@ workflows:
     environment:
       vars:
         NODE_VERSION: 20
+    cache:
+      cache_paths:
+        - $HOME/.npm
+        - $HOME/.gradle/caches
     scripts:
       - name: Install dependencies
-        script: npm install
+        script: npm install --legacy-peer-deps
       - name: Build APK
         script: cd android && ./gradlew assembleRelease
     artifacts:
