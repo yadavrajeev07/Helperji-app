@@ -1,6 +1,6 @@
-import { useEffect } from 'react';
-import { View, Text, Image, StyleSheet } from 'react-native';
 import { useRouter } from 'expo-router';
+import { useEffect } from 'react';
+import { Image, StyleSheet, Text, View } from 'react-native';
 
 export default function Index() {
   const router = useRouter();
@@ -15,7 +15,7 @@ export default function Index() {
 
   return (
     <View style={styles.container}>
-      <Image source={require('../assets/images/helperji-logo.png')} style={styles.logo} />
+      <Image source={require('../assets/images/helperji_logo.png')} style={styles.logo} />
       <Text style={styles.text}></Text>
     </View>
   );

@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
-import { View, Text, ActivityIndicator, FlatList, StyleSheet } from "react-native";
 import axios from "axios";
+import React, { useEffect, useState } from "react";
+import { ActivityIndicator, FlatList, StyleSheet, Text, View } from "react-native";
 import { API_BASE_URL } from './config';
 interface Staff {
   _id: string;
