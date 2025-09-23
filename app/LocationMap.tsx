@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import MapView, { Polyline, Marker } from "react-native-maps";
 import { View, ActivityIndicator, Text, StyleSheet } from "react-native";
 import axios from "axios";
-
+import { API_BASE_URL } from "./config";
 type LocationPoint = {
   latitude: number;
   longitude: number;
@@ -23,7 +23,7 @@ const LocationMap: React.FC<Props> = ({ staffId }) => {
 
   const fetchLocationHistory = async () => {
     try {
-     const res = await axios.get(`http://192.168.1.41:5000/api/staff/route/${staffId}`);
+     const res = await axios.get(`${API_BASE_URL}/api/staff/route/${staffId}`);
 const { punchInLocation, punchOutLocation, route } = res.data;
 
 

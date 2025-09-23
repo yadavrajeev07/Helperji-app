@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "helperji-tracker",
-    "slug": "helperji-tracker",
+    "slug": "helperjiapp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -11,10 +11,15 @@
     "ios": {
       "supportsTablet": true,
       "infoPlist": {
-        "UIBackgroundModes": ["location"],
+        "UIBackgroundModes": [
+          "location",
+          "location"
+        ],
         "NSLocationAlwaysAndWhenInUseUsageDescription": "We track your location even in background to update attendance.",
-        "NSLocationWhenInUseUsageDescription": "We track your location to update attendance."
-      }
+        "NSLocationWhenInUseUsageDescription": "We track your location to update attendance.",
+        "ITSAppUsesNonExemptEncryption": false
+      },
+      "bundleIdentifier": "com.yadavrajeev07.helperjiattendance"
     },
     "android": {
       "adaptiveIcon": {
@@ -53,7 +58,7 @@
     "extra": {
       "router": {},
       "eas": {
-        "projectId": "cf5420aa-2ee0-4fac-85b2-e2c7e5564dad"
+        "projectId": "d673eaec-20f6-43b4-b481-5b63ed6ccfc4"
       }
     },
     "owner": "yadavrajeev07"
