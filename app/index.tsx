@@ -15,7 +15,7 @@ export default function Index() {
 
   return (
     <View style={styles.container}>
-      <Image source={require('../assets/images/helperji_logo.png')} style={styles.logo} />
+      <Image source={require('../assets/images/helperji.png')} style={styles.logo} />
       <Text style={styles.text}></Text>
     </View>
   );

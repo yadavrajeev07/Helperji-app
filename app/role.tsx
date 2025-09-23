@@ -1,6 +1,6 @@
-import React from 'react';
-import { View, Text, TouchableOpacity, StyleSheet, Image } from 'react-native';
 import { useRouter } from 'expo-router';
+import React from 'react';
+import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
 const RoleScreen = () => {
   const router = useRouter();
@@ -8,7 +8,7 @@ const RoleScreen = () => {
   return (
     <View style={styles.container}>
       <Image
-        source={require('../assets/images/helperji-logo.png')}
+        source={require('../assets/images/helperji.png')}
         style={styles.logo}
         resizeMode="contain"
       />
