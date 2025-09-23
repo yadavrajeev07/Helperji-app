@@ -5,11 +5,10 @@ workflows:
     environment:
       vars:
         NODE_VERSION: 20
-        YARN_VERSION: latest
     scripts:
       - name: Install dependencies
-        script: yarn install
+        script: npm install
       - name: Build APK
-        script: npx react-native run-android --variant=release
+        script: cd android && ./gradlew assembleRelease
     artifacts:
       - android/app/build/outputs/apk/release/app-release.apk
