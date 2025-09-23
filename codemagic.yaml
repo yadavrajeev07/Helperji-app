@@ -12,6 +12,8 @@ workflows:
     scripts:
       - name: Install dependencies
         script: npm install --legacy-peer-deps
+      - name: Give Gradlew Permission
+        script: chmod +x android/gradlew
       - name: Build APK
         script: cd android && ./gradlew assembleRelease
     artifacts:
