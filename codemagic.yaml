@@ -19,5 +19,7 @@ workflows:
           cd android
           ./gradlew clean
           ./gradlew assembleRelease -Pandroid.disableResourceValidation=true
+      - name: List APKs
+        script: ls -R android/app/build/outputs/apk/release
     artifacts:
-      - android/app/build/outputs/apk/release/app-release.apk
+      - android/app/build/outputs/apk/release/*.apk
