@@ -1,10 +1,10 @@
 {
   "expo": {
-    "name": "helperji-tracker",
+    "name": "helperji",
     "slug": "helperjiapp",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/helperji.png",
     "scheme": "helperjitracker",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
@@ -23,8 +23,8 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "foregroundImage": "./assets/images/helperji.png",
+        "backgroundColor": "#ffff00"
       },
       "edgeToEdgeEnabled": true,
       "package": "com.yadavrajeev07.helperjiattendance",
@@ -37,17 +37,17 @@
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/images/helperji.png"
     },
     "plugins": [
       "expo-router",
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
+          "image": "./assets/images/helperji.png",
           "imageWidth": 200,
           "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
+          "backgroundColor": "#ffff00"
         }
       ],
       "expo-secure-store"
