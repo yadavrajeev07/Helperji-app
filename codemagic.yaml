@@ -14,9 +14,10 @@ workflows:
         script: npm install --legacy-peer-deps
       - name: Give Gradlew Permission
         script: chmod +x android/gradlew
-      - name: Clean Gradle Build
-        script: cd android && ./gradlew clean
-      - name: Build APK
-        script: cd android && ./gradlew assembleRelease -Pandroid.disableResourceValidation=true
+      - name: Clean & Build APK
+        script: |
+          cd android
+          ./gradlew clean
+          ./gradlew assembleRelease -Pandroid.disableResourceValidation=true
     artifacts:
       - android/app/build/outputs/apk/release/app-release.apk
